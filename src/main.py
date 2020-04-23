@@ -1,6 +1,12 @@
+##
+# main.py
+# Startup file of the 'Magazine' project.
+# Default algorithm parameters are set here.
+# 04/2020 Kamil Zacharczuk
+##
 from magazine import *
 from algorithm import *
-from magazine_gui import *
+from gui import *
 from solver import *
 
 def main():

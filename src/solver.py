@@ -1,3 +1,10 @@
+##
+# solver.py
+# Object of this class takes the algorithm parameters and input data
+# from the GUI, translates it to the form known by the algorithm engine,
+# invokes the algorithm and translates its output for the GUI.
+# 04/2020 Kamil Zacharczuk
+##
 from magazine import *
 from algorithm import *
 
@@ -16,9 +23,11 @@ class Solver:
         for b in boxesDimensions:
             boxes.append(Box(b[0], b[1]))
 
+        # Run the algorithm.
         winner = performAlgorithm(magazine, boxes, (int)(populationSize), (int)(iterations),
                                   (float)(mutationProbability))
 
+        # Check the fill factor for the winner solution.
         for box in winner:
             magazine.addBox(box)
 
