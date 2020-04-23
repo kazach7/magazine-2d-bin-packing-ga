@@ -235,21 +235,26 @@ class GUI:
                     if (winner[0][x][y] == "box"):
                         self.canvas.itemconfig(self.fields[x][y], fill="orange")
 
-            msg = "Optimum filling rate: " + "{:.4f}".format(winner[1])
-            messagebox.showinfo("Winner is...", msg)
-
             # Only block reshaping the magazine until the "Clear magazine" button is clicked 
             # if there is any box displayed in the magazine (fill factor > 0).
             if (winner[1] > 0):
                 self.solved = True
+                self.fillButton.config(state="disabled")
+                self.resolutionButton.config(state="disabled")
                 # To avoid automatical window resizing
                 self.algorithmButtonsFrame.pack_propagate(False)
                 
                 self.performAlgorithmButton.config(text="Clear magazine")
 
+            # Display fill factor
+            msg = "Optimum filling rate: " + "{:.4f}".format(winner[1])
+            messagebox.showinfo("Winner is...", msg)
+
         else: # A solution is displayed on the grid - this button is now to clear it.
             self.solved = False
             self.performAlgorithmButton.config(text="Perform algorithm")
+            self.fillButton.config(state="normal")
+            self.resolutionButton.config(state="normal")
 
             for x in range(self.magazine_width):
                 for y in range(self.magazine_height):
