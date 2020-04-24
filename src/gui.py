@@ -96,7 +96,7 @@ class GUI:
                                             command=lambda:self.performAlgorithmButtonClicked(), padx=10)
         self.performAlgorithmButton.pack(side=tk.LEFT)
 
-    ## Init and defining functions ##
+    ## Init functions ##
 
     def displayGUI(self):
         # Display the main window
@@ -201,7 +201,7 @@ class GUI:
         iterationsEntry.insert(0, self.iterations)
         probabilityLabel = tk.Label(entryFrame, text="Mutation probability: ")
         probabilityEntry = tk.Entry(entryFrame)
-        probabilityEntry.insert(0, "{:.4f}".format(self.mutationProbability))
+        probabilityEntry.insert(0, "{:.3f}".format(self.mutationProbability))
         populationSizeLabel.grid(row=0, column=0)
         populationSizeEntry.grid(row=0, column=1)
         iterationsLabel.grid(row=1, column=0)
@@ -288,6 +288,3 @@ class GUI:
         ):
             self.magazine_defined = True
             self.canvas.itemconfig(self.fields[x][y], fill="white")
-
-    def makeFieldWall(self, x, y):
-        pass # unused

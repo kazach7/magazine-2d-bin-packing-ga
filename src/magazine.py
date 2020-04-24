@@ -168,22 +168,6 @@ class Magazine:
             if (self.fields[i].state == FieldState.BOX):
                 self.fields[i].state = FieldState.EMPTY
 
-    #def checkIfMagazineIsFilled(self):
-    #    # Check if there is place for a box in the magazine - which actually
-    #    # means checking if there is place for a 1x1 box
-    #    index = self.next_box_index
-    #    while (index < len(self.fields)):
-    #        if (self.fields[index].state == FieldState.WALL
-    #            or self.fields[index].state == FieldState.BOX
-    #            or (self.fields[index-1].state == FieldState.BOX and index % self.X != 0)
-    #            or (index >= self.X and self.fields[index - self.X].state == FieldState.BOX)
-    #            or (index+1 < len(self.fields) and self.fields[index+1].state == FieldState.BOX
-    #              and (index+1) % self.X != 0)):
-    #                index += 1
-    #        else:
-    #            return False
-    #    return True
-
 
 
         
