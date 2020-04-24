@@ -1,8 +1,8 @@
-##
-# algorithm.py
-# The genetic algorithm engine.
-# 04/2020 Kamil Zacharczuk
-##
+"""
+algorithm.py
+The genetic algorithm engine.
+04/2020 Kamil Zacharczuk
+"""
 import itertools
 import random
 from magazine import *

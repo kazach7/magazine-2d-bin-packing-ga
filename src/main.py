@@ -1,9 +1,9 @@
-##
-# main.py
-# Startup file of the 'Magazine' project.
-# Default algorithm parameters are set here.
-# 04/2020 Kamil Zacharczuk
-##
+"""
+main.py
+Startup file of the 'Magazine' project.
+Default algorithm parameters are set here.
+04/2020 Kamil Zacharczuk
+"""
 from magazine import *
 from algorithm import *
 from gui import *

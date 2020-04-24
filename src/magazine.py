@@ -1,9 +1,9 @@
-##
-# magazine.py
-# Contains objects representing the magazine elements abstraction,
-# used by the algorithm to calculate the fitness value for genotypes etc.
-# 04/2020 Kamil Zacharczuk
-##
+"""
+magazine.py 
+Contains objects representing the magazine elements abstraction,
+used by the algorithm to calculate the fitness value for genotypes etc.
+04/2020 Kamil Zacharczuk
+"""
 from enum import Enum
 
 class FieldState(Enum):

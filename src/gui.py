@@ -1,11 +1,11 @@
-## 
-# gui.py
-# The GUI of the application.
-# Allows defining the magazine shape, defining boxes to fill the magazine (rectangles),
-# setting the genetic algorithm parameters, running the algorithm.
-# Displays the returned solution -- location of boxes in the magazine, fill factor.
-# 04/2020, Kamil Zacharczuk
-##
+"""
+gui.py
+The GUI of the application.
+Allows defining the magazine shape, defining boxes to fill the magazine (rectangles),
+setting the genetic algorithm parameters, running the algorithm.
+Displays the returned solution -- location of boxes in the magazine, fill factor.
+04/2020, Kamil Zacharczuk
+"""
 import tkinter as tk
 from tkinter import messagebox
 from tkinter import simpledialog

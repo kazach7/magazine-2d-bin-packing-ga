@@ -1,10 +1,10 @@
-##
-# solver.py
-# Object of this class takes the algorithm parameters and input data
-# from the GUI, translates it to the form known by the algorithm engine,
-# invokes the algorithm and translates its output for the GUI.
-# 04/2020 Kamil Zacharczuk
-##
+"""
+solver.py
+Object of this class takes the algorithm parameters and input data
+from the GUI, translates it to the form known by the algorithm engine,
+invokes the algorithm and translates its output for the GUI.
+04/2020 Kamil Zacharczuk
+"""
 from magazine import *
 from algorithm import *
 
