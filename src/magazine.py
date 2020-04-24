@@ -27,7 +27,6 @@ class Magazine:
         self.X = X
         self.Y = Y
         self.fill_factor = 0.0
-        self.is_filled = False
         self.wall_blocks_count = 0
         self.next_box_index = 0   # index of field where trying to insert a next box will begin
 
@@ -163,7 +162,6 @@ class Magazine:
     def removeAllBoxes(self):
         self.fill_factor = 0.0
         self.next_box_index = 0
-        self.is_filled = 0
         for i in range (self.X*self.Y):
             if (self.fields[i].state == FieldState.BOX):
                 self.fields[i].state = FieldState.EMPTY
